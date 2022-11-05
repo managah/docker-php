@@ -15,7 +15,7 @@ jobs:
   build:
     strategy:
       matrix:
-        version: ['7.4-apache-alpine']
+        version: ['7.4-apache-alpine', '8.0-apache-alpine']
     runs-on: ubuntu-latest
 
     steps:
