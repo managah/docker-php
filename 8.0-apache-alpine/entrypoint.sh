@@ -10,7 +10,7 @@ if [ ! -z "$NEW_WWW_DATA_GID" ]; then
     groupmod -g $NEW_WWW_DATA_GID www-data
 fi
 
-cat > /etc/php7/conf.d/zzz-nuphp.ini <<EOF
+cat > /etc/php8/conf.d/zzz-nuphp.ini <<EOF
 date.timezone=${NUPHP_DATE_TIMEZONE:-UTC}
 upload_max_filesize=${NUPHP_UPLOAD_MAX_FILESIZE:-100M}
 post_max_size=${NUPHP_POST_MAX_FILESIZE:-108M}
